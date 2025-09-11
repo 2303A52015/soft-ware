@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Banking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f3f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        .account-info, .form-section, .transactions {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 8px;
+            width: 100%;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Banking System</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Accounts</a>
+    <a href="#">Transactions</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="account-info">
+        <h2>Account Information</h2>
+        <p><strong>Account Holder:</strong> John Doe</p>
+        <p><strong>Account Number:</strong> 123456789</p>
+        <p><strong>Balance:</strong> $10,000.00</p>
+    </div>
+
+    <div class="form-section">
+        <h2>Deposit / Withdraw</h2>
+        <form>
+            <label for="type">Transaction Type:</label>
+            <select id="type">
+                <option value="deposit">Deposit</option>
+                <option value="withdraw">Withdraw</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <button type="button">Submit</button>
+        </form>
+    </div>
+
+    <div class="transactions">
+        <h2>Transaction History</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>2025-09-10</td>
+                <td>Deposit</td>
+                <td>$500.00</td>
+                <td>$10,000.00</td>
+            </tr>
+            <tr>
+                <td>2025-09-08</td>
+                <td>Withdraw</td>
+                <td>$200.00</td>
+                <td>$9,500.00</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
